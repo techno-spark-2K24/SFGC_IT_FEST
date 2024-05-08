@@ -1,0 +1,45 @@
+.content {
+
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-position: center;
+    background-image: url('./imgs/bg4.avif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(189, 255, 255);
+
+
+
+}
+
+.logo {
+
+    width: 150px;
+    height: 100px;
+
+
+}
+
+.cart {
+    width: 150px;
+    height: 250px;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    margin-right: 190px;
+
+}
+
+.events {
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
