@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
+
     background-size: cover;
     background-attachment: fixed;
     color: rgb(189, 255, 255);
@@ -58,4 +58,116 @@ li {
     align-items: center;
     justify-content: center;
     align-items: center;
+}
+
+@keyframes display {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+.cart {
+    opacity: 0;
+    transform: rotate3d(0, 0, 0, 0deg);
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.cart.animate {
+    transition-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: rotate3d(0, 1, 1, 360deg);
+    opacity: 1;
+}
+
+.cart1 {
+    opacity: 0;
+    transform: rotate3d(0, 0, 0, 0deg);
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.cart1.animate {
+
+    transition-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: rotate3d(0, 1, 1, 360deg);
+    opacity: 1;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: #fff;
+    text-transform: uppercase;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.1em;
+    }
+}
+
+.text-shadow {
+    font-style: italic;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 2px 10px #06f3ff;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    letter-spacing: 0.2em;
+    -webkit-animation: flicker 1s ease-in-out infinite alternate;
+    animation: flicker 1s ease-in-out infinite alternate;
+}
+
+.text-shadow:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .tags small {
+        font-size: 0.4em;
+    }
+}
+
+@-webkit-keyframes flicker {
+    0% {
+        opacity: 0.5;
+        text-shadow: 2px 2px 10px #00ffe1;
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 2px 2px 20px #00268e;
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.5;
+        text-shadow: 2px 2px 10px #00f8f8;
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 2px 2px 20px #2962ff;
+    }
 }

@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-family: "Poppins", sans-serif;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0.1em;
+	font-size: 0.8em;
+	background-image: url('./imgs/bg3.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 49%;
+	width: 100%;
+	background-size: cover;
+	color: rgb(255, 0, 149);
+}
+
+
+.card {
+	max-width: 20rem;
+	background: border-box;
+	backdrop-filter: blur(10px);
+	margin: 0 1rem;
+	padding: 1rem;
+	box-shadow: 0 7px 5px rgba(191, 189, 189, 0.2);
+	width: 95%;
+	border-radius: 0.5rem;
+	margin: 2%;
+	margin-bottom: 10%;
+}
+
+.timeline {
+	position: relative;
+	max-width: 1300px;
+
+	margin: 0 auto;
+}
+
+
+.timeline::after {
+	content: "";
+	position: absolute;
+	width: 6px;
+	background-color: white;
+	top: 28px;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -3px;
+}
+
+ul {
+	list-style: none;
+}
+
+.right {
+	text-align: left;
+	position: relative;
+	right: -185px;
+	list-style: none;
+}
+
+.left {
+	text-align: right;
+	position: relative;
+	left: -185px;
+	list-style: none;
+}
+
+.dotRight::after {
+	content: "";
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	left: -40px;
+	background-color: white;
+	border: 4px dashed #e74702;
+	top: 20px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.dotLeft::after {
+	content: "";
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	right: -40px;
+	background-color: white;
+	border: 4px dashed #5560ff;
+	top: 20px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+@media (max-width: 768px) {
+	.card {
+		max-width: 13rem;
+		background: border-box;
+		backdrop-filter: blur(10px);
+		margin: 0 1rem;
+		padding: 1rem;
+		box-shadow: 0 7px 5px rgba(191, 189, 189, 0.2);
+		width: 100%;
+		border-radius: 0.5rem;
+		margin: 10% 10% 1% 1%;
+		margin-bottom: 2%;
+	}
+
+	.right {
+		text-align: left;
+		position: relative;
+		right: -130px;
+		list-style: none;
+	}
+
+	.left {
+		text-align: right;
+		position: relative;
+		left: -130px;
+		list-style: none;
+	}
+
+}
