@@ -8,9 +8,9 @@
     background-position: center;
     background-image: url('./imgs/bg4.avif');
     background-repeat: no-repeat;
-    background-size: contain;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
     background-size: cover;
     background-attachment: fixed;
     color: rgb(189, 255, 255);
@@ -28,8 +28,7 @@
 }
 
 .cart {
-    width: 150px;
-    height: 250px;
+
     box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
     margin-top: 30px;
     margin-right: 250px;
@@ -37,12 +36,9 @@
 }
 
 .cart1 {
-    width: 150px;
-    height: 250px;
+
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
     margin-top: 30px;
-
-
 }
 
 .events {
@@ -73,15 +69,15 @@ li {
 }
 
 .cart {
+
     opacity: 0;
     transform: rotate3d(0, 0, 0, 0deg);
-
     transition: transform 0.5s ease-in-out;
 }
 
 .cart.animate {
     transition-duration: 1s;
-    animation-fill-mode: forwards;
+
     transform: rotate3d(0, 1, 1, 360deg);
     opacity: 1;
 }
@@ -96,7 +92,7 @@ li {
 .cart1.animate {
 
     transition-duration: 1s;
-    animation-fill-mode: forwards;
+
     transform: rotate3d(0, 1, 1, 360deg);
     opacity: 1;
 
@@ -118,11 +114,7 @@ h1 {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.1em;
-    }
-}
+
 
 .text-shadow {
     font-style: italic;
@@ -142,9 +134,48 @@ h1 {
     color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
     .tags small {
         font-size: 0.4em;
+    }
+
+    h1 {
+        font-size: 1.0em;
+    }
+
+    .content {
+        background-image: url('./imgs/bg0.png');
+    }
+
+    .cart {
+        box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
+        margin-top: 30px;
+        margin-right: 180px;
+        transform: scale3d(0, 0, 0)
+    }
+
+    .cart1 {
+        box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
+        margin-top: 30px;
+        transform: scale3d(0, 0, 0)
+    }
+
+    .cart1.animate {
+
+        transition-duration: 0.8s;
+
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+
+    }
+
+    .cart.animate {
+
+        transition-duration: 0.8s;
+
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+
     }
 }
 
