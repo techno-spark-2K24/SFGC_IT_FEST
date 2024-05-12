@@ -10,6 +10,7 @@ body {
 	align-items: center;
 	text-align: center;
 	justify-content: center;
+	background-position: center;
 	font-family: "Poppins", sans-serif;
 	background-attachment: fixed;
 	margin: 0;
@@ -17,9 +18,8 @@ body {
 	letter-spacing: 0.1em;
 	font-size: 0.8em;
 	background-image: url('./imgs/bg3.jpg');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: 49%;
+
+	background-position: 52%;
 	width: 100%;
 	background-size: cover;
 	color: rgb(255, 0, 149);
@@ -32,11 +32,12 @@ body {
 	backdrop-filter: blur(10px);
 	margin: 0 1rem;
 	padding: 1rem;
-	box-shadow: 0 7px 5px rgba(191, 189, 189, 0.2);
-	width: 95%;
+
+	width: 100%;
 	border-radius: 0.5rem;
 	margin: 2%;
 	margin-bottom: 10%;
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .timeline {
@@ -74,6 +75,7 @@ ul {
 	position: relative;
 	left: -185px;
 	list-style: none;
+
 }
 
 .dotRight::after {
@@ -104,7 +106,8 @@ ul {
 
 @media (max-width: 768px) {
 	.card {
-		max-width: 13rem;
+		max-width: 11.8rem;
+		max-height: 6rem;
 		background: border-box;
 		backdrop-filter: blur(10px);
 		margin: 0 1rem;
@@ -114,6 +117,15 @@ ul {
 		border-radius: 0.5rem;
 		margin: 10% 10% 1% 1%;
 		margin-bottom: 2%;
+
+	}
+
+	.dotRight::after {
+		margin-left: 20px;
+	}
+
+	.dotLeft::after {
+		margin-right: 20px;
 	}
 
 	.right {
@@ -128,6 +140,7 @@ ul {
 		position: relative;
 		left: -130px;
 		list-style: none;
+		margin-left: 60px;
 	}
 
 }

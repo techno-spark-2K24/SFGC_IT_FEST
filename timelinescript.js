@@ -28,6 +28,20 @@ const timelineArray = [
         time: "2016 Onwards",
         event:
             "introducing features like async/await, spread/rest operators etc.",
+    }, {
+        time: "2009",
+        event:
+            "ECMAScript5: strict mode, Object method",
+    },
+    {
+        time: "2015",
+        event:
+            "ES6: introduced classes, Arraow functons, let/const variables ",
+    },
+    {
+        time: "2016 Onwards",
+        event:
+            "introducing features like async/await, spread/rest operators etc.",
     },
 ];
 
