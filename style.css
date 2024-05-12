@@ -71,20 +71,20 @@ li {
 .cart {
 
     opacity: 0;
-    transform: rotate3d(0, 0, 0, 0deg);
+    transform: scale3d(0, 0, 0);
     transition: transform 0.5s ease-in-out;
 }
 
 .cart.animate {
     transition-duration: 1s;
 
-    transform: rotate3d(0, 1, 1, 360deg);
+    transform: scale3d(1, 1, 1);
     opacity: 1;
 }
 
 .cart1 {
     opacity: 0;
-    transform: rotate3d(0, 0, 0, 0deg);
+    transform: scale3d(0, 0, 0);
 
     transition: transform 0.5s ease-in-out;
 }
@@ -93,7 +93,7 @@ li {
 
     transition-duration: 1s;
 
-    transform: rotate3d(0, 1, 1, 360deg);
+    transform: scale3d(1, 1, 1);
     opacity: 1;
 
 }
