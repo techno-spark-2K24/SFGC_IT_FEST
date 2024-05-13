@@ -2,46 +2,46 @@ const timelineArray = [
     {
         time: "9:00AM Sabangana",
         event:
-            "JavaScript Introduced by Brendan Eich at Netscape",
+            "Inauguration program of IT fest ",
     },
     {
-        time: "9:00AM Sabangana",
+        time: "10:00AM Lab1",
         event:
-            "ECMAScript created to Standardize JavaScript",
+            "Coding and Debuging ",
     },
     {
-        time: "9:00AM Sabangana",
+        time: "10:00AM 307",
         event:
-            "ECMAScript3: Introduction of RegEx, try-catch",
+            "Gamming",
     },
     {
-        time: "2009",
+        time: "10:00AM auditorium",
         event:
-            "ECMAScript5: strict mode, Object method",
+            "Fashion Walk",
     },
     {
-        time: "2015",
+        time: "12:00AM",
         event:
-            "ES6: introduced classes, Arraow functons, let/const variables ",
+            "Electronic Circuit Analysis ",
     },
     {
-        time: "2016 Onwards",
+        time: "12:00AM",
         event:
-            "introducing features like async/await, spread/rest operators etc.",
+            "IT Quiz",
     }, {
-        time: "2009",
+        time: "12:00AM",
         event:
-            "ECMAScript5: strict mode, Object method",
+            "Rubiks Cube",
     },
     {
-        time: "2015",
+        time: "1:00PM",
         event:
-            "ES6: introduced classes, Arraow functons, let/const variables ",
+            "Lunch ",
     },
     {
-        time: "2016 Onwards",
+        time: "2:00PM",
         event:
-            "introducing features like async/await, spread/rest operators etc.",
+            "Price Distribution",
     },
 ];
 

@@ -83,7 +83,7 @@ ul {
 	position: absolute;
 	width: 22px;
 	height: 22px;
-	left: -40px;
+	left: -75px;
 	background-color: white;
 	border: 4px dashed #e74702;
 	top: 20px;
@@ -96,7 +96,7 @@ ul {
 	position: absolute;
 	width: 22px;
 	height: 22px;
-	right: -40px;
+	right: -75px;
 	background-color: white;
 	border: 4px dashed #5560ff;
 	top: 20px;
@@ -121,11 +121,13 @@ ul {
 	}
 
 	.dotRight::after {
-		margin-left: 20px;
+		margin-left: 55px;
+		right: -50px;
 	}
 
 	.dotLeft::after {
 		margin-right: 20px;
+		right: -40px;
 	}
 
 	.right {

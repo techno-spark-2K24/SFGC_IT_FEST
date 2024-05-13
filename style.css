@@ -9,7 +9,7 @@
     background-image: url('./imgs/bg0.png');
     background-repeat: no-repeat;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: bradley script mt, cursive;
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -25,20 +25,6 @@
     height: 100px;
 
 
-}
-
-.cart {
-
-    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 30px;
-    margin-right: 250px;
-
-}
-
-.cart1 {
-
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 30px;
 }
 
 .events {
@@ -71,29 +57,36 @@ li {
 .cart {
 
     opacity: 0;
-    transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
     transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    margin-right: 250px;
+    backdrop-filter: blur(5px);
 }
 
 .cart.animate {
     transition-duration: 1s;
 
-    transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1) rotate3d(1, 2, 3, 360deg);
     opacity: 1;
 }
 
 .cart1 {
     opacity: 0;
-    transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
 
     transition: transform 0.5s ease-in-out;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    backdrop-filter: blur(5px);
 }
 
 .cart1.animate {
 
     transition-duration: 1s;
 
-    transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1) rotate3d(1, 2, 3, 360deg);
     opacity: 1;
 
 }
@@ -115,6 +108,32 @@ h1 {
 }
 
 
+
+/* #deptCS {
+    color: rgba(255, 0, 0, 0.1);
+    font-size: xx-large;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    background-size: cover;
+    background-image: url(./imgs/sudoku.png);
+    -webkit-background-clip: text;
+    animation: background-text-animation 15s linear infinite;
+}
+
+@keyframes background-text-animation {
+    0% {
+        background-position: left 0px top 50%;
+    }
+
+    50% {
+        background-position: left 1500px top 50%;
+    }
+
+    100% {
+        background-position: left 0px top 50%;
+    }
+} */
 
 .text-shadow {
     font-style: italic;
@@ -151,13 +170,15 @@ h1 {
         box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
         margin-top: 30px;
         margin-right: 180px;
-        transform: scale3d(0, 0, 0)
+        transform: scale3d(0, 0, 0);
+        backdrop-filter: blur(1px);
     }
 
     .cart1 {
         box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
         margin-top: 30px;
-        transform: scale3d(0, 0, 0)
+        transform: scale3d(0, 0, 0);
+        backdrop-filter: blur(1px);
     }
 
     .cart1.animate {
