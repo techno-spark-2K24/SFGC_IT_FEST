@@ -14,24 +14,73 @@
             <header>
                 <img src="./imgs/sfgc.png" class="logo"> <h3><u>Seshadripuram First Grade College, Yelahanka</u> </h3>
                   <h4 id="deptCS">Department of Computer Science </h4>
+                  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top" >
+                    <a class="navbar-brand" href="#" id="logohead"><h1>IT Fest</h1></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+                        <span id="cancleIcon">
+                        <svg   xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16" onclick="cancleButtonHandler()">
+                          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                        </svg>
+                      </span>
+                        <span class="navbar-toggler-icon" id="navicon" onclick="navButtonHandler()"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav" >
+                        <ul class="navbar-nav ml-auto" id="headnave">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#events"><h3>Events </h3></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./timeline.html"><h3>TimeLine</h3></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#rules"><h3>Rules</h3></a>
+                                
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#content"><h3>Contact</h3></a>
+                              
+                          </li>
+                            
+                        </ul>
+                    </div>  
+                </nav>
             </header>
+            
             <main>
               <br>
-
+             
               <section>
                 <h1 class="text-shadow"> -- SFGC IT FEST-- </h1>
                 <div class="tags">
                   <p class="text-shadow"><small>#itfest #computerscience</small></p>
                 </div>
               </section><br>
-                <h4><i>The Objective of this Event is to Enhance the knowledge in the field of IT</i></h4><br>
+                <h4><i>The Objective of this Event is to Enhance the knowledge in the field of IT</i></h4>
+                <div id="container">
+                  <span id="text1"></span>
+                  <span id="text2"></span>
+               </div>
+              <center>
+              <svg id="filters">
+                  <defs>
+                      <filter id="threshold">
+                          <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                0 1 0 0 0
+                                0 0 1 0 0
+                                0 0 0 255 -140" />
+                      </filter>
+                  </defs>
+              </svg>
+            </center>
                 <div class="events">
+                  <br>
                 <h2><u>Events in the IT Fest </u></h2>
                 
                    <br>
                    
                 <div class="container text-center">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" id="events">
                         <div class="col  cart">
                             <img src="./imgs/coding1.png" alt="code" width="50px" height=" 50px">
                             <h3>Coding and Debugging contest</h3>
@@ -143,10 +192,16 @@
                     </div> 
                     <a href="timeline.html"><button type="button" class="btn btn-primary">View Timeline  </button></a>
                   </div><br>
+                  <div id="content">
+                   Phone:<br>
+                   email:<br>
+                   
+                  </div>
                   <div class="footer">
                     <p>&copy; 2024 SFGC. All rights reserved.</p>
                 </div>
             </main>
+          
         </div>
         
     </center>

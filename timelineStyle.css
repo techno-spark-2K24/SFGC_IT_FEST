@@ -7,18 +7,16 @@
 body {
 	min-height: 100vh;
 	display: flex;
-	align-items: center;
 	text-align: center;
 	justify-content: center;
 	background-position: center;
-	font-family: "Poppins", sans-serif;
 	background-attachment: fixed;
 	margin: 0;
 	padding: 0;
 	letter-spacing: 0.1em;
 	font-size: 0.8em;
 	background-image: url('./imgs/bg3.jpg');
-
+	font-family: bradley script mt, cursive;
 	background-position: 52%;
 	width: 100%;
 	background-size: cover;
@@ -66,14 +64,14 @@ ul {
 .right {
 	text-align: left;
 	position: relative;
-	right: -185px;
+	right: -195px;
 	list-style: none;
 }
 
 .left {
 	text-align: right;
 	position: relative;
-	left: -185px;
+	left: -195px;
 	list-style: none;
 
 }
