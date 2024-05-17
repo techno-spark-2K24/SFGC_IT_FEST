@@ -16,7 +16,7 @@
     position: absolute;
 
     display: inline-block;
-    margin-left: -200px;
+    margin-left: -150px;
     font-family: "Raleway", sans-serif;
     font-size: 5em;
 
@@ -209,13 +209,13 @@ h1 {
     #text1,
     #text2 {
 
-        width: 95%;
+        width: 98%;
         display: inline-block;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
         font-family: "Raleway", sans-serif;
         font-size: 4em;
 
-        margin-left: -3em;
+        margin-left: -2.7em;
 
         user-select: none;
     }
