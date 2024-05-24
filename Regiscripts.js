@@ -39,11 +39,9 @@ function register() {
 
             let d = postData.TeamName;
 
-            if (!traverseCheck(data, d)) {
+            if (traverseCheck(data, d)) {
+                console.log("True")
                 Object.assign(data, { [d]: postData });
-
-
-
 
                 fetch(postApiUrl, {
                     method: 'PUT',
@@ -59,7 +57,9 @@ function register() {
                         return response.json();
                     })
                     .then(data => {
+                        alert("Registred Successfuly in PUT")
                         console.log('Data:', data);
+
                     })
                     .catch(error => {
                         console.error('There has been a problem with your fetch operation in PUT:', error);
@@ -74,7 +74,7 @@ function register() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
-                }, body: JSON.stringify({ postData })
+                }, body: JSON.stringify({ [postData.TeamName]: postData })
             }).then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok ' + response.statusText);
@@ -82,31 +82,34 @@ function register() {
                 return response.json();
             })
                 .then(data => {
+                    alert("Registred Successfuly in POST")
                     console.log('Data:', data);
+                    window.location = "./index.html"
                 })
                 .catch(error => {
-                    console.error('There has been a problem with your fetch operation in POST:', error);
+                    console.error('There has been a problem with your fetch operation in POST: at', postApiUrl, error);
                 });
 
-            console.error('There was a problem with the fetch operation in GET:', error);
+
         });
 
 }
 function traverseCheck(data, target) {
+    let temp = true;
     for (let info in data) {
 
         if (data.hasOwnProperty(info))
             if (typeof data[info] === 'object' && !Array.isArray(data[info])) {
-                traverseCheck(data[info], target);
+                temp = traverseCheck(data[info], target);
             } else {
-                console.log("info.TeamName =" + info)
+
                 if (info === "TeamName" && data[info] === target) {
                     alert("Team Name alrady Registred")
-                    return true;
+                    temp = false;
                 }
             }
 
     }
-    return false;
+    return temp;
 }
 
