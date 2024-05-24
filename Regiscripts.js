@@ -57,7 +57,7 @@ function register() {
                         return response.json();
                     })
                     .then(data => {
-                        alert("Registred Successfuly in PUT")
+                        alert("Registred Successfuly ")
                         console.log('Data:', data);
 
                     })
@@ -82,7 +82,7 @@ function register() {
                 return response.json();
             })
                 .then(data => {
-                    alert("Registred Successfuly in POST")
+                    alert("Registred Successfuly")
                     console.log('Data:', data);
                     window.location = "./index.html"
                 })
