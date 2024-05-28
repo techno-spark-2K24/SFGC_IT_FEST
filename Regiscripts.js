@@ -35,7 +35,27 @@ function register() {
     else if (postData.competition === "gaming")
         postApiUrl += "gaming"
     else if (postData.competition === "quiz")
-        postApiUrl += "quiz"
+        postApiUrl += "quiz";
+    else if (postData.competition === "sudoku")
+        postApiUrl += "sudoku"
+    else if (postData.competition === "treasurHunt")
+        postApiUrl += "treasurHunt"
+    else if (postData.competition === "videography")
+        postApiUrl += "videography"
+    else if (postData.competition === "fashionWalk")
+        postApiUrl += "fashionWalk"
+    else if (postData.competition === "electronicsPPT")
+        postApiUrl += "electronicsPPT"
+    else if (postData.competition === "logoDesigne")
+        postApiUrl += "logoDesigne"
+    else if (postData.competition === "debate")
+        postApiUrl += "debate"
+    else if (postData.competition === "mathsPPT")
+        postApiUrl += "mathsPPT"
+    else if (postData.competition === "rubiksCube")
+        postApiUrl += "rubiksCube"
+    else if (postData.competition === "ECA")
+        postApiUrl += "ECA"
 
 
 
