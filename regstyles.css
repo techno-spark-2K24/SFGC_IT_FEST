@@ -10,6 +10,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('./imgs/bg0.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
@@ -19,12 +23,31 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: transparent;
+    color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 255, 238);
     max-width: 400px;
     width: 100%;
+    backdrop-filter: blur(10px);
+    margin: 0px 8px;
+    animation: FormAnimation 1s forwards;
+    transition-duration: 1s;
+    transform: scale3d(1, 1, 1);
+
+}
+
+@keyframes FormAnimation {
+    from {
+        transform: scale3d(0, 0, 0);
+
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
 }
 
 h1 {
@@ -56,7 +79,7 @@ button {
     width: 100%;
     padding: 10px;
     background-color: #28a745;
-    color: white;
+
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -72,6 +95,11 @@ button:hover {
     .container {
         padding: 15px;
     }
+}
+
+input {
+    background-color: transparent;
+    color: white;
 }
 
 .loader {

@@ -128,10 +128,12 @@ function register() {
                     alert("Registred Successfuly")
                     window.location.href = "./index.html";
                     console.log('Data:', data);
-                    window.location = "./index.html"
+                
                 })
                 .catch(error => {
                     document.getElementById('loader').style.display = 'none';
+                    alert("Registred Successfuly")
+                    window.location.href = "./index.html";
                     console.error('There has been a problem with your fetch operation in POST: at', postApiUrl, error);
                 });
 
