@@ -45,8 +45,9 @@
 
 .logo {
 
-    width: 150px;
-    height: 100px;
+    width: 120px;
+    height: 80px;
+    margin-left: 30px;
 
 
 }
@@ -221,6 +222,7 @@ h1 {
 }
 
 @media (max-width: 980px) {
+
     .tags small {
         font-size: 0.4em;
     }
@@ -232,6 +234,7 @@ h1 {
 
     .content {
         background-image: url('./imgs/bg0.png');
+        
     }
 
     .cart {
