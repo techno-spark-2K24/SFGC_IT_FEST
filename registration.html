@@ -11,32 +11,36 @@
         <h1>IT Fest Registration</h1>
         <div id="registrationForm" method="post">
             <div class="form-group">
-                <label for="name">Team Name:</label>
+                <label for="Tname">Team Name: <span style="color: red; font-size: x-large; ">*</span></label>
                 <input type="text" id="Tname" name="Tname" placeholder="TeamName" required>
             </div>
             <div class="form-group">
-                <label for="name">Team-mate1 Name:</label>
+                <label for="Tname">Team-mate1 Name: <span style="color: red; font-size: x-large; ">*</span></label>
                 <input type="text" id="Tname1" name="Tname1" placeholder="Team-mate1" required>
             </div>
             <div class="form-group">
-                <label for="name">Team-mate2 Name:</label>
+                <label for="Tname2">Team-mate2 Name:</label>
                 <input type="text" id="Tname2" name="Tname2" placeholder="Team-mate2" required>
+            </div>
+            <div class="form-group">
+                <label for="Tno">Number of teammates (if teammates are above 2 ):</label>
+                <input type="number" id="Tno" name="Tno" placeholder="Numbers of tements " required>
             </div>
             <div id="loader" class="loader"></div>
             <div class="form-group">
-                <label for="email">Email:</label>
+                <label for="email">Email: <span style="color: red; font-size: x-large; ">*</span></label>
                 <input type="email" id="email" name="email" placeholder="email" required>
             </div>
             <div class="form-group">
-                <label for="phone">Mobile Number:</label>
+                <label for="phone">Mobile Number: <span style="color: red; font-size: x-large; ">*</span></label>
                 <input type="number" id="phone" name="phone" placeholder="Mobile Number" required>
             </div>
             <div class="form-group">
-                <label for="age">College:</label>
+                <label for="college">College: <span style="color: red; font-size: x-large; ">*</span></label>
                 <input type="text" id="college" name="college" placeholder="CollegeName" required>
             </div>
             <div class="form-group">
-                <label for="category">Competition Category:</label>
+                <label for="category">Competition Category: <span style="color: red; font-size: x-large; ">*</span></label>
                 <select id="category" name="category" required>
                     <option value="coding">Coding & Debugging</option>
                     <option value="gaming">Gaming</option>

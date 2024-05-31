@@ -33,11 +33,11 @@
     background-image: url('./imgs/bg0.png');
     background-repeat: no-repeat;
 
-    font-family: cursive;
+    font-family: serif;
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
-    color: rgb(252, 253, 255);
+    color: rgb(255, 255, 237);
 
 
 
@@ -335,4 +335,11 @@ header {
 .nav-link :hover {
     text-decoration: underline;
 
+}
+
+.rules {
+    background: transparent;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 10px 10px rgba(0, 247, 227, 0.5);
 }
