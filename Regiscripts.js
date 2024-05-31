@@ -56,6 +56,8 @@ function register() {
         postApiUrl += "rubiksCube"
     else if (postData.competition === "ECA")
         postApiUrl += "ECA"
+    else if (postData.competition === "golgappa")
+        postApiUrl += "golgappa"
 
 
 
