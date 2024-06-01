@@ -1,47 +1,72 @@
 const timelineArray = [
+
     {
-        time: "9:00AM Sabangana",
+        time: "10:00AM CS LAB-1",
         event:
-            "Inauguration program of IT fest ",
+            "GAMING(BGMI) ",
     },
     {
-        time: "10:00AM Lab1",
+        time: "10:00AM (will be informed later)",
         event:
-            "Coding and Debuging ",
+            "LOGO DESIGN",
     },
     {
-        time: "10:00AM 307",
+        time: "10:00AM (will be informed later)",
         event:
-            "Gamming",
+            "VIDEOGRAPHY",
     },
     {
-        time: "10:00AM auditorium",
+        time: "11:00AM (will be informed later)",
+        event:
+            "TREASURE HUNT ",
+    },
+    {
+        time: "11:00AM Room 308(3rd floor)",
+        event:
+            "SUDOKU ",
+    },
+    {
+        time: "11:00AM Sabhangana(GroundFloor)",
+        event:
+            "MATHS PPT",
+    },
+    {
+        time: "12:00AM Room 304(3rd floor)",
+        event:
+            "DEBATE",
+    }, {
+        time: "12:00AM Room 307(3rd floor)",
+        event:
+            "RUBIKS CUBE",
+    }, {
+        time: "12:00AM Sabhangana(GroundFloor)",
+        event:
+            "ELECTRONICS PPT",
+    },
+    {
+        time: "2:00PM CS LAB-2",
+        event:
+            "CODING & DEBUGGING ",
+    },
+    {
+        time: "2:00PM Sabhangana (GroundFloor)",
+        event:
+            "IT QUIZ",
+    },
+    {
+        time: "2:00PM ElectronicsLab(4rd floor)",
+        event:
+            "Electronic Circuit Analysis",
+    },
+    {
+        time: "3:00PM AUDITORIUM",
+        event:
+            "Golgappa Challenge",
+    },
+    {
+        time: "3:30PM AUDITORIUM",
         event:
             "Fashion Walk",
-    },
-    {
-        time: "12:00AM",
-        event:
-            "Electronic Circuit Analysis ",
-    },
-    {
-        time: "12:00AM",
-        event:
-            "IT Quiz",
-    }, {
-        time: "12:00AM",
-        event:
-            "Rubiks Cube",
-    },
-    {
-        time: "1:00PM",
-        event:
-            "Lunch ",
-    },
-    {
-        time: "2:00PM",
-        event:
-            "Price Distribution",
     },
 ];
 

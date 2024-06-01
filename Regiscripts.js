@@ -130,7 +130,7 @@ function register() {
                     alert("Registred Successfuly")
                     window.location.href = "./index.html";
                     console.log('Data:', data);
-                
+
                 })
                 .catch(error => {
                     document.getElementById('loader').style.display = 'none';

@@ -81,7 +81,7 @@ ul {
 	position: absolute;
 	width: 22px;
 	height: 22px;
-	left: -75px;
+	left: -50px;
 	background-color: white;
 	border: 4px dashed #e74702;
 	top: 20px;
@@ -94,7 +94,7 @@ ul {
 	position: absolute;
 	width: 22px;
 	height: 22px;
-	right: -75px;
+	right: -50px;
 	background-color: white;
 	border: 4px dashed #5560ff;
 	top: 20px;
@@ -119,8 +119,8 @@ ul {
 	}
 
 	.dotRight::after {
-		margin-left: 55px;
-		right: -50px;
+		margin-left: 30px;
+		right: -55px;
 	}
 
 	.dotLeft::after {
@@ -141,6 +141,12 @@ ul {
 		left: -130px;
 		list-style: none;
 		margin-left: 60px;
+	}
+
+	.content {
+		justify-content: center;
+		align-items: center;
+		margin-left: 5em;
 	}
 
 }
