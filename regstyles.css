@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./imgs/bg0.png');
+    background-image: url('./imgs/BG2.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -98,7 +98,10 @@ button:hover {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+    body{
+    background-image: url('./imgs/BGPhoneImg.jpg');
+    }
     .container {
         padding: 15px;
     }

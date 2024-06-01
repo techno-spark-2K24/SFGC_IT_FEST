@@ -1,70 +1,78 @@
 const timelineArray = [
 
     {
-        time: "10:00AM CS LAB-1",
+        time: "10:00AM Sabhangana (Ground Floor)",
         event:
-            "GAMING(BGMI) ",
+            "DEBATE",
     },
     {
-        time: "10:00AM (will be informed later)",
+        time: "10:00AM Room 324 (3rd Floor)",
+        event:
+            "SUDOKU",
+    },
+
+    {
+        time: "11:00AM Room 304 (3rd Floor)",
+        event:
+            "GAMING (BGMI) ",
+    },
+    {
+        time: "11:00AM CS LAB-1 (3rd Floor)",
+        event:
+            "CODING",
+    },
+    {
+        time: "11:00AM (3rd Floor)",
+        event:
+            "TREASURE HUNT",
+    },
+    {
+        time: "11:00AM Room 322(3rd Floor) ",
         event:
             "LOGO DESIGN",
     },
     {
-        time: "10:00AM (will be informed later)",
+        time: "11:00AM (3rd Floor)",
         event:
             "VIDEOGRAPHY",
     },
-    {
-        time: "11:00AM (will be informed later)",
+     {
+        time: "11:00AM Room 325 (3rd floor)",
         event:
-            "TREASURE HUNT ",
+            "Electronic PPT",
     },
     {
-        time: "11:00AM Room 308(3rd floor)",
-        event:
-            "SUDOKU ",
-    },
-    {
-        time: "11:00AM Sabhangana(GroundFloor)",
-        event:
-            "MATHS PPT",
-    },
-    {
-        time: "12:00AM Room 304(3rd floor)",
-        event:
-            "DEBATE",
-    }, {
         time: "12:00AM Room 307(3rd floor)",
         event:
             "RUBIKS CUBE",
     }, {
         time: "12:00AM Sabhangana(GroundFloor)",
         event:
-            "ELECTRONICS PPT",
-    },
-    {
-        time: "2:00PM CS LAB-2",
-        event:
-            "CODING & DEBUGGING ",
-    },
-    {
-        time: "2:00PM Sabhangana (GroundFloor)",
-        event:
             "IT QUIZ",
+    },
+    {
+        time: "12:00AM Room 321(3rd Floor)",
+        event:
+            "RUBIK'S CUBE ",
+    },
+    {
+        time: "1:00PM ",
+        event:
+            "LUNCH",
     },
     {
         time: "2:00PM ElectronicsLab(4rd floor)",
         event:
             "Electronic Circuit Analysis",
     },
-    {
-        time: "3:00PM AUDITORIUM",
+    
+     {
+        time: "3:00PM Room 325 (3rd floor)",
         event:
-            "Golgappa Challenge",
+            "MATHS PPT",
     },
     {
-        time: "3:30PM AUDITORIUM",
+        time: "2:00PM AUDITORIUM",
         event:
             "Fashion Walk",
     },

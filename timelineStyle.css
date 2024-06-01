@@ -9,18 +9,18 @@ body {
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	background-position: center;
 	background-attachment: fixed;
 	margin: 0;
 	padding: 0;
 	letter-spacing: 0.1em;
 	font-size: 0.8em;
-	background-image: url('./imgs/bg3.jpg');
-	font-family: bradley script mt, cursive;
-	background-position: 52%;
+/* 	background-image: url('./imgs/bg3.jpg'); */
+	background-image: url('./imgs/BG2.jpg');
+	font-family: serif;
+	background-position: center;
 	width: 100%;
 	background-size: cover;
-	color: rgb(248, 190, 0);
+	color:rgb(255, 255, 255)
 }
 
 
@@ -103,6 +103,9 @@ ul {
 }
 
 @media (max-width: 768px) {
+	body {
+	background-image: url('./imgs/BGPhoneImg.jpg');
+	}
 	.card {
 		max-width: 11.8rem;
 		max-height: 6rem;

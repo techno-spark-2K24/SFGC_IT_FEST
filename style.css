@@ -11,7 +11,7 @@
     filter: url(#threshold) blur(0.6px);
 }
 
-#text1,
+/* #text1,
 #text2 {
     position: absolute;
     display: inline-block;
@@ -20,7 +20,7 @@
     font-size: 5em;
 
     user-select: none;
-}
+} */
 
 .content {
 
@@ -30,7 +30,9 @@
     align-items: center;
     min-height: 100vh;
     background-position: center;
-    background-image: url('./imgs/bg0.png');
+   /* background-image: url('./imgs/bg0.png');*/
+/*     background-image: url('./bgImg.jpg'); */
+     background-image: url('./imgs/BG2.jpg');
     background-repeat: no-repeat;
 
     font-family: serif;
@@ -198,10 +200,11 @@ h1 {
         height: 5pt;
         top: 0;
         bottom: 0;
-
-        filter: url(#threshold) blur(0.6px);
+/*         background-image: url('./bgImg.jpg'); */
+         background-image: url('./imgs/BGPhoneImg.jpg');
+      
     }
-
+/* 
     #text1,
     #text2 {
 
@@ -214,7 +217,7 @@ h1 {
         margin-left: -2.7em;
 
         user-select: none;
-    }
+    } */
 }
 
 @media (max-width: 980px) {
@@ -229,7 +232,9 @@ h1 {
 
 
     .content {
-        background-image: url('./imgs/bg0.png');
+        /*background-image: url('./imgs/bg0.png');*/
+/*         background-image: url('./bgImg.jpg'); */
+        background-image: url('./imgs/BGPhoneImg.jpg');
 
     }
 
@@ -281,7 +286,7 @@ h1 {
         display: none;
         padding: 1px;
         border-radius: 50%;
-        box-shadow: 0px 0px 10px 10px rgba(0, 247, 227, 0.5);
+        box-shadow: 0px 0px 8px 8px rgba(0, 247, 227, 0.5);
         animation: iconAni 1s ease-in-out;
 
     }
@@ -299,8 +304,6 @@ h1 {
     }
 
     #navicon {
-
-        padding: 10px;
         border-radius: 10%;
         box-shadow: 0px 0px 10px 10px rgba(0, 247, 227, 0.5);
         animation: menuiconAni 1s ease-in-out;
@@ -308,6 +311,7 @@ h1 {
 
     #logohead {
         visibility: hidden;
+        content: "Fest";
     }
 
     @keyframes menuiconAni {
