@@ -30,9 +30,9 @@
     align-items: center;
     min-height: 100vh;
     background-position: center;
-   /* background-image: url('./imgs/bg0.png');*/
-/*     background-image: url('./bgImg.jpg'); */
-     background-image: url('./imgs/BG2.jpg');
+    /* background-image: url('./imgs/bg0.png');*/
+    /*     background-image: url('./bgImg.jpg'); */
+    background-image: url('./imgs/BG2.jpg');
     background-repeat: no-repeat;
 
     font-family: serif;
@@ -132,32 +132,6 @@ h1 {
 
 
 
-/* #deptCS {
-    color: rgba(255, 0, 0, 0.1);
-    font-size: xx-large;
-    text-transform: capitalize;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    background-size: cover;
-    background-image: url(./imgs/sudoku.png);
-    -webkit-background-clip: text;
-    animation: background-text-animation 15s linear infinite;
-}
-
-@keyframes background-text-animation {
-    0% {
-        background-position: left 0px top 50%;
-    }
-
-    50% {
-        background-position: left 1500px top 50%;
-    }
-
-    100% {
-        background-position: left 0px top 50%;
-    }
-} */
-
 .text-shadow {
     font-style: italic;
     text-transform: uppercase;
@@ -174,18 +148,6 @@ h1 {
 }
 
 
-/* 
-@keyframes flicker {
-    from {
-        opacity: 0.5;
-        text-shadow: 0px 0px 10px #00f8f8;
-    }
-
-    to {
-        opacity: 1;
-        text-shadow: 2px 2px 10px #0241ec;
-    }
-} */
 
 .text-shadow:hover {
     color: #fff;
@@ -193,6 +155,11 @@ h1 {
 
 
 @media(max-width: 780px) {
+    #logohead {
+        visibility: hidden;
+        content: "F";
+    }
+
     #container {
         position: relative;
 
@@ -200,24 +167,11 @@ h1 {
         height: 5pt;
         top: 0;
         bottom: 0;
-/*         background-image: url('./bgImg.jpg'); */
-         background-image: url('./imgs/BGPhoneImg.jpg');
-      
+        /*         background-image: url('./bgImg.jpg'); */
+        background-image: url('./imgs/BGPhoneImg.jpg');
+
     }
-/* 
-    #text1,
-    #text2 {
 
-        width: 98%;
-        display: inline-block;
-        margin-bottom: 0.5em;
-        font-family: "Raleway", sans-serif;
-        font-size: 4em;
-
-        margin-left: -2.7em;
-
-        user-select: none;
-    } */
 }
 
 @media (max-width: 980px) {
@@ -233,7 +187,7 @@ h1 {
 
     .content {
         /*background-image: url('./imgs/bg0.png');*/
-/*         background-image: url('./bgImg.jpg'); */
+        /*         background-image: url('./bgImg.jpg'); */
         background-image: url('./imgs/BGPhoneImg.jpg');
 
     }
@@ -311,7 +265,7 @@ h1 {
 
     #logohead {
         visibility: hidden;
-        content: "Fest";
+        content: "F";
     }
 
     @keyframes menuiconAni {
@@ -346,4 +300,45 @@ header {
     border-radius: 10px;
     backdrop-filter: blur(50px);
     box-shadow: 0px 0px 10px 10px rgba(0, 247, 227, 0.5);
+}
+
+.eventrule {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 0px 10px 10px rgba(0, 247, 227, 0.5);
+    font-size: large;
+    max-width: 500px;
+    margin: 0px 10px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 35%;
+    /* Center the overlay */
+    transform: translate(-50%, -50%);
+    /* Center the overlay */
+    z-index: 2;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

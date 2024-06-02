@@ -14,13 +14,19 @@ body {
 	padding: 0;
 	letter-spacing: 0.1em;
 	font-size: 0.8em;
-/* 	background-image: url('./imgs/bg3.jpg'); */
+	/* 	background-image: url('./imgs/bg3.jpg'); */
 	background-image: url('./imgs/BG2.jpg');
 	font-family: serif;
 	background-position: center;
 	width: 100%;
 	background-size: cover;
-	color:rgb(255, 255, 255)
+	color: rgb(255, 255, 255);
+
+
+	align-items: center;
+
+	background-repeat: no-repeat;
+
 }
 
 
@@ -103,9 +109,11 @@ ul {
 }
 
 @media (max-width: 768px) {
+
 	body {
-	background-image: url('./imgs/BGPhoneImg.jpg');
+		background-image: url('./imgs/BGPhoneImg.jpg');
 	}
+
 	.card {
 		max-width: 11.8rem;
 		max-height: 6rem;

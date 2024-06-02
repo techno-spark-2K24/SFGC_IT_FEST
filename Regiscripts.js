@@ -1,6 +1,11 @@
 document.getElementById('loader').style.display = 'none';
+let jsondata = {}
+let url = ""
 
 function register() {
+    let temp = false;
+    let data = {}
+
     // URL of the API endpoint
 
     let postApiUrl = 'https://getpantry.cloud/apiv1/pantry/1c4f9119-32de-4766-af1f-01141acb4e6d/basket/';
@@ -12,8 +17,9 @@ function register() {
     // Data to be sent
     const postData = {
         TeamName: document.getElementById("Tname").value,
-        Team_mate1: document.getElementById("Tname1").value,
-        Team_mate2: document.getElementById("Tname2").value,
+        Teammate1: document.getElementById("Tname1").value,
+        Teammate2: document.getElementById("Tname2").value,
+        teammates: document.getElementById("Tnames").value,
         email: document.getElementById("email").value,
         phoneNumber: document.getElementById("phone").value,
         college: document.getElementById("college").value,
@@ -28,8 +34,10 @@ function register() {
         alert("Invalid email ID ")
         return;
     }
-    document.getElementById('loader').style.display = "block";
-    // console.log(postData)
+    if (!(postData.TeamName && postData.Teammate1 && postData.email && postData.phoneNumber && postData.college && postData.competition)) {
+        alert("Fill All The Required Fieldes ")
+        return;
+    }
     if (postData.competition === "coding")
         postApiUrl += "coding"
     else if (postData.competition === "gaming")
@@ -56,13 +64,7 @@ function register() {
         postApiUrl += "rubiksCube"
     else if (postData.competition === "ECA")
         postApiUrl += "ECA"
-    else if (postData.competition === "golgappa")
-        postApiUrl += "golgappa"
-
-
-
-    let data = {}
-
+    document.getElementById('loader').style.display = "block";
     fetch(postApiUrl)
         .then(response => {
 
@@ -72,78 +74,126 @@ function register() {
 
             return response.json();
         })
-        .then(data => {
+        .then(da => {
+            temp = traverseCheck(da, postData.TeamName);
+            data = da
+            console.log(data);
+        }
+        )
+        .catch(error => {
+            console.error(error)
 
-            //console.log(data);
+        })
+        .then(() => {
+            if (data != {} && temp) {
+                document.getElementById('loader').style.display = "none";
+                alert("Continue to pay")
+                document.getElementById("reg1").style.display = "none"
+                document.getElementById("reg2").style.display = "block"
+                document.getElementById('loader1').style.display = 'none';
+                addAmount(postData);
 
-            let d = postData.TeamName;
+                const submit = document.getElementById("finalSubmit")
+                submit.addEventListener("click", () => {
 
-            if (traverseCheck(data, d)) {
-                console.log("True")
-                Object.assign(data, { [d]: postData });
+                    document.getElementById('loader1').style.display = "block";
+                    const paymentID = document.getElementById("TID").value;
+                    postData["PaymentID"] = paymentID;
+                    // console.log(postData)
 
-                fetch(postApiUrl, {
-                    method: 'PUT',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                })
-                    .then(response => {
+                    console.log("True")
+                    Object.assign(data, { [postData.TeamName]: postData });
+
+                    fetch(postApiUrl, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    })
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok ' + response.statusText);
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            document.getElementById('loader').style.display = 'none';
+                            alert("Registred Successfuly ")
+                            window.location.href = "./index.html";
+                            console.log('Data:', data);
+
+                        })
+                        .catch(error => {
+                            document.getElementById('loader').style.display = 'none';
+                            alert("Registred Successfuly ")
+                            window.location.href = "./index.html";
+                            console.error('There has been a problem with your fetch operation in PUT:', error);
+                        });
+
+                });
+            }
+            else if (Object.keys(data).length === 0) {
+                document.getElementById('loader').style.display = "none";
+                alert("Continue to pay")
+                document.getElementById("reg1").style.display = "none"
+                document.getElementById("reg2").style.display = "block"
+                addAmount(postData)
+                document.getElementById('loader1').style.display = 'none';
+
+
+                const submit = document.getElementById("finalSubmit")
+                submit.addEventListener("click", () => {
+
+                    document.getElementById('loader1').style.display = "block";
+                    const paymentID = document.getElementById("TID").value;
+                    postData["PaymentID"] = paymentID;
+
+                    fetch(postApiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }, body: JSON.stringify({ [postData.TeamName]: postData })
+                    }).then(response => {
                         if (!response.ok) {
                             throw new Error('Network response was not ok ' + response.statusText);
                         }
                         return response.json();
                     })
-                    .then(data => {
-                        document.getElementById('loader').style.display = 'none';
-                        alert("Registred Successfuly ")
-                        window.location.href = "./index.html";
-                        console.log('Data:', data);
+                        .then(da => {
+                            document.getElementById('loader1').style.display = 'none';
+                            alert("Registred Successfuly")
+                            window.location.href = "./index.html";
+                            console.log('Data:', da);
 
-                    })
-                    .catch(error => {
-                        document.getElementById('loader').style.display = 'none';
-                        alert("Registred Successfuly ")
-                        window.location.href = "./index.html";
-                        console.error('There has been a problem with your fetch operation in PUT:', error);
-                    });
+                        })
+                        .catch(error => {
+                            document.getElementById('loader1').style.display = 'none';
+                            alert("Registred Successfuly")
+                            window.location.href = "./index.html";
+                            console.error('There has been a problem with your fetch operation in POST: at', postApiUrl, error);
+                        });
+                });
             }
 
-
-
-        })
-        .catch(error => {
-            fetch(postApiUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                }, body: JSON.stringify({ [postData.TeamName]: postData })
-            }).then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok ' + response.statusText);
-                }
-                return response.json();
-            })
-                .then(data => {
-                    document.getElementById('loader').style.display = 'none';
-                    alert("Registred Successfuly")
-                    window.location.href = "./index.html";
-                    console.log('Data:', data);
-
-                })
-                .catch(error => {
-                    document.getElementById('loader').style.display = 'none';
-                    alert("Registred Successfuly")
-                    window.location.href = "./index.html";
-                    console.error('There has been a problem with your fetch operation in POST: at', postApiUrl, error);
-                });
-
-
         });
+}
+function addAmount(postData) {
+    let amount = document.getElementById("amount");
+    if (postData.competition === "coding" || postData.competition === "quiz" || postData.competition === "debate" || postData.competition === "mathsPPT" ||
+        postData.competition === "electronicsPPT" || postData.competition === "rubiksCube" || postData.competition === "ECA" || postData.competition === "videography" || postData.competition === "sudoku") {
+        amount.innerHTML = "Pay 200Rs For Your Event "
+    }
+    else if (postData.competition === "treasurHunt")
+        amount.innerHTML = "Pay 300Rs For Your Event "
+    else if (postData.competition === "gaming")
+        amount.innerHTML = "Pay 400Rs For Your Event "
+    else if (postData.competition === "fashionWalk")
+        amount.innerHTML = "Pay 500Rs For Your Event "
+    else if (postData.competition === "logoDesigne")
+        amount.innerHTML = "Pay 100Rs For Your Event "
 
 }
-
 function traverseCheck(data, target) {
     let temp = true;
     for (let info in data) {
@@ -163,5 +213,3 @@ function traverseCheck(data, target) {
     }
     return temp;
 }
-
-

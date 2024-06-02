@@ -8,10 +8,9 @@
 </head>
 <body>
     <br>
-    <div class="container">
-        <br>
-        <br>
-        
+    
+    <div class="container " id="reg1" style="margin-top: 70px;">
+    
         <h1>IT Fest Registration</h1>
         <br>
         <div id="registrationForm" method="post">
@@ -20,16 +19,16 @@
                 <input type="text" id="Tname" name="Tname" placeholder="TeamName" required>
             </div>
             <div class="form-group">
-                <label for="Tname">Team-mate1 Name: <span style="color: red; font-size: x-large; ">*</span></label>
+                <label for="Tname">Teammate1 Name: <span style="color: red; font-size: x-large; ">*</span></label>
                 <input type="text" id="Tname1" name="Tname1" placeholder="Team-mate1" required>
             </div>
             <div class="form-group">
-                <label for="Tname2">Team-mate2 Name:</label>
+                <label for="Tname2">Teammate2 Name:</label>
                 <input type="text" id="Tname2" name="Tname2" placeholder="Team-mate2" required>
             </div>
             <div class="form-group">
-                <label for="Tno">Number of teammates (if teammates are above 2 ):</label>
-                <input type="number" id="Tno" name="Tno" placeholder="Numbers of tements "  required>
+                <label for="Tnames">Other teammates (if any):</label>
+                <textarea id="Tnames" name="Tnames" placeholder="Other teammates " rows="3" cols="50"  required></textarea>
             </div>
             <div id="loader" class="loader"></div>
             <div class="form-group">
@@ -60,12 +59,29 @@
                     <option value="mathsPPT">Maths PPT</option>
                     <option value="rubiksCube">Rubiks Cube</option>
                     <option value="ECA">Electronic Circuit Analysis</option>
-                    <option value="golgappa">Golgappa Challenge</option>
                 </select placeholder="Select Events" required>
             </div>
             
             <button type="submit" onclick="register()">Register</button>
         </div>
+    </div>
+    <div class="content text-center" id="reg2">
+        <h1>Pay Now</h1>
+        <center>
+        <div class="eventrule">
+        <h3 id="amount"></h3>
+        <img src="./imgs/UPIimg.jpg"  alt="code" width="200px" height=" 200px">
+        <br>
+        <h3>After Paying</h3>
+        <div id="loader1" class="loader"></div>
+        <div class="form-group">
+            <label for="TID">Enter Transaction ID :</label>
+            <input type="text" id="TID" name="TID" placeholder="Transaction ID" required>
+        </div>
+        <button type="button" class="btn btn-success" id="finalSubmit" onclick="pay()">Register</button>
+        
+    </div>
+    </center>
     </div>
     <script src="Regiscripts.js"></script>
 </body>
