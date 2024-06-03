@@ -10,14 +10,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./imgs/BG2.jpg');
+    /* background-image: url('./imgs/BG2.jpg'); */
+    background-image: url('./imgs/bgFinal.png');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
 
-    margin: 0;
-    padding: 0;
+    
     min-height: 100vh;
     background-position: center;
     width: 100%;
@@ -100,7 +100,8 @@ button:hover {
 
 @media (max-width: 800px) {
     body {
-        background-image: url('./imgs/BGPhoneImg.jpg');
+        /* background-image: url('./imgs/BGPhoneImg.jpg'); */
+        background-image: url('./imgs/bgFinal.png');
     }
 
     .container {

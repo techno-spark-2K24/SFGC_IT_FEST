@@ -35,7 +35,7 @@
     background-image: url('./imgs/bgFinal.png');
     background-repeat: no-repeat;
 
-    font-family: serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -168,7 +168,7 @@ h1 {
         top: 0;
         bottom: 0;
         /*         background-image: url('./bgImg.jpg'); */
-        background-image: url('./imgs/BGPhoneImg.jpg');
+        /* background-image: url('./imgs/BGPhoneImg.jpg'); */
 
     }
 
@@ -188,7 +188,9 @@ h1 {
     .content {
         /*background-image: url('./imgs/bg0.png');*/
         /*         background-image: url('./bgImg.jpg'); */
-        background-image: url('./imgs/BGPhoneImg.jpg');
+        /* background-image: url('./imgs/BGPhoneImg.jpg'); */
+        /* background-image: url('./imgs/bgFinal.png'); */
+        background-image: url('./imgs/mobileBG.png');
 
     }
 
@@ -341,4 +343,34 @@ header {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #0095ff;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+
+    transform: scale(1.1);
+}
+
+.button:active {
+    background-color: #3e8e41;
+
+    transform: translateY(4px);
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
 }
