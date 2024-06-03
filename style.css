@@ -34,8 +34,8 @@
     /*     background-image: url('./bgImg.jpg'); */
     background-image: url('./imgs/bgFinal.png');
     background-repeat: no-repeat;
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: initial;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -371,6 +371,6 @@ header {
 }
 
 h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: fantasy;
     font-style: italic;
 }
