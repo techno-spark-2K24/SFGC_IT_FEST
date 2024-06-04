@@ -82,10 +82,11 @@ li {
     opacity: 0;
     transform: scale3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
     transition: transform 0.5s ease-in-out;
-    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 30px;
+    box-shadow: 10px 10px 10px 30px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
     margin-right: 250px;
     backdrop-filter: blur(5px);
+    border-radius: 10%;
 }
 
 .cart.animate {
@@ -100,9 +101,10 @@ li {
     transform: scale3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
 
     transition: transform 0.5s ease-in-out;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 30px;
+    box-shadow: 10px 10px 10px 30px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
     backdrop-filter: blur(5px);
+    border-radius: 10%;
 }
 
 .cart1.animate {
@@ -189,10 +191,10 @@ h1 {
         /*background-image: url('./imgs/bg0.png');*/
         /*         background-image: url('./bgImg.jpg'); */
         /* background-image: url('./imgs/BGPhoneImg.jpg'); */
-        /* background-image: url('./imgs/bgFinal.png'); */
+        background-image: url('./imgs/bgFinal.png');
         /* background-image: url('./imgs/mobileBG.png'); */
         /* background-image: url('https://wallpapers-clan.com/wp-content/uploads/2023/06/cyberpunk-city-abstract-wallpaper.jpg'); */
-        background-image: url('./imgs/techBG.webp');
+        /* background-image: url('./imgs/techBG.webp'); */
 
 
     }
@@ -374,6 +376,6 @@ header {
 }
 
 h3 {
-    font-family: fantasy;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
 }
