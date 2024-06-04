@@ -82,11 +82,13 @@ li {
     opacity: 0;
     transform: scale3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
     transition: transform 0.5s ease-in-out;
-    box-shadow: 10px 10px 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 10px 20px rgba(0, 255, 217, 0.5);
     margin-top: 40px;
     margin-right: 250px;
     backdrop-filter: blur(5px);
     border-radius: 10%;
+    padding: 10px;
+
 }
 
 .cart.animate {
@@ -94,6 +96,7 @@ li {
 
     transform: scale3d(1, 1, 1) rotate3d(1, 2, 3, 360deg);
     opacity: 1;
+
 }
 
 .cart1 {
@@ -101,10 +104,11 @@ li {
     transform: scale3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
 
     transition: transform 0.5s ease-in-out;
-    box-shadow: 10px 10px 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 10px 20px rgba(0, 255, 217, 0.5);
     margin-top: 40px;
     backdrop-filter: blur(5px);
     border-radius: 10%;
+
 }
 
 .cart1.animate {
@@ -189,7 +193,7 @@ h1 {
 
     .content {
         /*background-image: url('./imgs/bg0.png');*/
-        /*         background-image: url('./bgImg.jpg'); */
+        /* background-image: url('./bgImg.jpg'); */
         /* background-image: url('./imgs/BGPhoneImg.jpg'); */
         background-image: url('./imgs/bgFinal.png');
         /* background-image: url('./imgs/mobileBG.png'); */
@@ -200,18 +204,22 @@ h1 {
     }
 
     .cart {
-        box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
+
         margin-top: 30px;
         margin-right: 180px;
         transform: scale3d(0, 0, 0);
         backdrop-filter: blur(1px);
+        padding: 10px;
+
     }
 
     .cart1 {
-        box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
+
         margin-top: 30px;
         transform: scale3d(0, 0, 0);
         backdrop-filter: blur(1px);
+
+        padding: 10px;
     }
 
     .cart1.animate {
@@ -357,10 +365,14 @@ header {
     cursor: pointer;
     outline: none;
     color: #fff;
-    background-color: #0095ff;
-    border: none;
+    background-color: rgba(128, 128, 128, 0.5);
+    backdrop-filter: blur(50px);
+    border: 2px solid white;
     border-radius: 5px;
     transition: all 0.3s ease;
+    border-radius: 10%;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.6);
+
 }
 
 .button:hover {
@@ -370,7 +382,7 @@ header {
 }
 
 .button:active {
-    background-color: #3e8e41;
+    background-color: #01ff09;
 
     transform: translateY(4px);
 }
@@ -378,4 +390,32 @@ header {
 h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
+}
+
+.viewTimeline {
+    padding: 15px 25px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: rgba(254, 1, 250, 0.18);
+    backdrop-filter: blur(50px);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border-radius: 10%;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.6);
+}
+
+.viewTimeline:hover {
+    background-color: #00abf4;
+
+    transform: scale(1.1);
+}
+
+.viewTimeline:active {
+    background-color: #00abf4;
+
+    transform: translateY(4px);
 }
