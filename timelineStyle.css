@@ -15,7 +15,7 @@ body {
 	letter-spacing: 0.1em;
 	font-size: 0.8em;
 	/* 	background-image: url('./imgs/bg3.jpg'); */
-	background-image: url('./imgs/BG2.jpg');
+	 background-image: url('./imgs/bgFinal.png');
 	font-family: serif;
 	background-position: center;
 	width: 100%;
@@ -111,7 +111,8 @@ ul {
 @media (max-width: 768px) {
 
 	body {
-		background-image: url('./imgs/BGPhoneImg.jpg');
+/* 		background-image: url('./imgs/BGPhoneImg.jpg'); */
+		background-image: url('./imgs/mobileBG.png'); 
 	}
 
 	.card {
