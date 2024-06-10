@@ -44,7 +44,7 @@ const timelineArray = [
     {
         time: "12:00AM Room 307(3rd floor)",
         event:
-            "RUBIKS CUBE",
+            "RUBIK'S CUBE",
     }, {
         time: "12:00AM Sabhangana(GroundFloor)",
         event:
@@ -53,7 +53,7 @@ const timelineArray = [
     {
         time: "12:00AM Room 321(3rd Floor)",
         event:
-            "RUBIK'S CUBE ",
+            "MATHS PPT" ,
     },
     {
         time: "1:00PM ",
@@ -64,12 +64,6 @@ const timelineArray = [
         time: "2:00PM ElectronicsLab(4rd floor)",
         event:
             "Electronic Circuit Analysis",
-    },
-    
-     {
-        time: "3:00PM Room 325 (3rd floor)",
-        event:
-            "MATHS PPT",
     },
     {
         time: "2:00PM AUDITORIUM",
