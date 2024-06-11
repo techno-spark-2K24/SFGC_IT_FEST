@@ -231,27 +231,27 @@ function whatsappQR(postData) {
     // if (postData.competition === "coding")
     //     document.getElementById("QR").src = "./imgs/codingQR.jpg"
     // else if (postData.competition === "quiz")
-    //     document.getElementById("QR").src = "./imgs/quizQR.png"
+    //     document.getElementById("QR").src = "./imgs/quizQR.jpg"
     // else if (postData.competition === "debate")
-    //     document.getElementById("QR").src = "./imgs/debateQR.png"
+    //     document.getElementById("QR").src = "./imgs/debateQR.jpg"
     // else if (postData.competition === "mathsPPT")
-    //     document.getElementById("QR").src = "./imgs/mathsPPTQR.png"
+    //     document.getElementById("QR").src = "./imgs/mathsPPTQR.jpg"
     // else if (postData.competition === "electronicsPPT")
-    //     document.getElementById("QR").src = "./imgs/electronicsPPTQR.png"
+    //     document.getElementById("QR").src = "./imgs/electronicsPPTQR.jpg"
     // else if (postData.competition === "rubiksCube")
-    //     document.getElementById("QR").src = "./imgs/rubiksCubeQR.png"
+    //     document.getElementById("QR").src = "./imgs/rubiksCubeQR.jpg"
     // else if (postData.competition === "ECA")
-    //     document.getElementById("QR").src = "./imgs/ECAQR.png"
+    //     document.getElementById("QR").src = "./imgs/ECAQR.jpg"
     // else if (postData.competition === "videography")
-    //     document.getElementById("QR").src = "./imgs/videographyQR.png"
+    //     document.getElementById("QR").src = "./imgs/videographyQR.jpg"
     // else if (postData.competition === "sudoku")
-    //     document.getElementById("QR").src = "./imgs/sudokuQR.png"
+    //     document.getElementById("QR").src = "./imgs/sudokuQR.jpg"
     // else if (postData.competition === "treasurHunt")
-    //     document.getElementById("QR").src = "./imgs/treasurHuntQR.png"
+    //     document.getElementById("QR").src = "./imgs/treasurHuntQR.jpg"
     // else if (postData.competition === "gaming")
-    //     document.getElementById("QR").src = "./imgs/gamingQR.png"
+    //     document.getElementById("QR").src = "./imgs/gamingQR.jpg"
     // else if (postData.competition === "fashionWalk")
-    //     document.getElementById("QR").src = "./imgs/fashionWalkQR.png"
+    //     document.getElementById("QR").src = "./imgs/fashionWalkQR.jpg"
     // else if (postData.competition === "logoDesigne")
-    //     document.getElementById("QR").src = "./imgs/logoDesigneQR.png"
+    //     document.getElementById("QR").src = "./imgs/logoDesigneQR.jpg"
 }
