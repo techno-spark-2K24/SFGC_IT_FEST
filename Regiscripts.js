@@ -227,31 +227,31 @@ function traverseCheck(data, target) {
 }
 
 function whatsappQR(postData) {
-     document.getElementById("QR").src = "./imgs/codingQR.jpg"
-    // if (postData.competition === "coding")
-    //     document.getElementById("QR").src = "./imgs/codingQR.jpg"
-    // else if (postData.competition === "quiz")
-    //     document.getElementById("QR").src = "./imgs/quizQR.jpg"
-    // else if (postData.competition === "debate")
-    //     document.getElementById("QR").src = "./imgs/debateQR.jpg"
-    // else if (postData.competition === "mathsPPT")
-    //     document.getElementById("QR").src = "./imgs/mathsPPTQR.jpg"
-    // else if (postData.competition === "electronicsPPT")
-    //     document.getElementById("QR").src = "./imgs/electronicsPPTQR.jpg"
-    // else if (postData.competition === "rubiksCube")
-    //     document.getElementById("QR").src = "./imgs/rubiksCubeQR.jpg"
-    // else if (postData.competition === "ECA")
-    //     document.getElementById("QR").src = "./imgs/ECAQR.jpg"
-    // else if (postData.competition === "videography")
-    //     document.getElementById("QR").src = "./imgs/videographyQR.jpg"
-    // else if (postData.competition === "sudoku")
-    //     document.getElementById("QR").src = "./imgs/sudokuQR.jpg"
-    // else if (postData.competition === "treasurHunt")
-    //     document.getElementById("QR").src = "./imgs/treasurHuntQR.jpg"
-    // else if (postData.competition === "gaming")
-    //     document.getElementById("QR").src = "./imgs/gamingQR.jpg"
-    // else if (postData.competition === "fashionWalk")
-    //     document.getElementById("QR").src = "./imgs/fashionWalkQR.jpg"
-    // else if (postData.competition === "logoDesigne")
-    //     document.getElementById("QR").src = "./imgs/logoDesigneQR.jpg"
+    // document.getElementById("QR").src = "./imgs/codingQR.jpg"
+     if (postData.competition === "coding")
+         document.getElementById("QR").src = "./imgs/codingQR.jpg"
+     else if (postData.competition === "quiz")
+        document.getElementById("QR").src = "./imgs/quizQR.jpg"
+     else if (postData.competition === "debate")
+       document.getElementById("QR").src = "./imgs/debateQR.jpg"
+    else if (postData.competition === "mathsPPT")
+        document.getElementById("QR").src = "./imgs/mathsPPTQR.jpg"
+    else if (postData.competition === "electronicsPPT")
+        document.getElementById("QR").src = "./imgs/electronicsPPTQR.jpg"
+    else if (postData.competition === "rubiksCube")
+      document.getElementById("QR").src = "./imgs/rubiksCubeQR.jpg"
+    else if (postData.competition === "ECA")
+       document.getElementById("QR").src = "./imgs/ECAQR.jpg"
+    else if (postData.competition === "videography")
+        document.getElementById("QR").src = "./imgs/videographyQR.jpg"
+    else if (postData.competition === "sudoku")
+        document.getElementById("QR").src = "./imgs/sudokuQR.jpg"
+    else if (postData.competition === "treasurHunt")
+         document.getElementById("QR").src = "./imgs/treasurHuntQR.jpg"
+    else if (postData.competition === "gaming")
+        document.getElementById("QR").src = "./imgs/gamingQR.jpg"
+     else if (postData.competition === "fashionWalk")
+         document.getElementById("QR").src = "./imgs/fashionWalkQR.jpg"
+     else if (postData.competition === "logoDesigne")
+        document.getElementById("QR").src = "./imgs/logoDesigneQR.jpg"
 }
