@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     /* background-image: url('./imgs/BG2.jpg'); */
-    background-image: url('./imgs/bgFinal.png');
+    background-image: url('./imgs/BGFINAL.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ button:hover {
 @media (max-width: 800px) {
     body {
         /* background-image: url('./imgs/BGPhoneImg.jpg'); */
-        background-image: url('./imgs/bgFinal.png');
+        background-image: url('./imgs/BGFINAL.jpg');
     }
 
     .container {
