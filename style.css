@@ -31,8 +31,8 @@
     min-height: 100vh;
     background-position: center;
     /* background-image: url('./imgs/bg0.png');*/
-         background-image: url('./imgs/bgCyberP.jpg'); 
-   /* background-image: url('./imgs/bgFinal.png');*/
+       /*  background-image: url('./imgs/bgCyberP.jpg'); */
+    background-image: url('./imgs/bgFinal.png');
     background-repeat: no-repeat;
     font-family: initial;
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
