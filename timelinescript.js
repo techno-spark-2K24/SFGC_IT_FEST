@@ -1,57 +1,58 @@
 const timelineArray = [
+   
 
     {
-        time: "10:00AM Sabhangana (Ground Floor)",
+        time: "Sabhangana (Ground Floor)",
         event:
             "DEBATE",
     },
     {
-        time: "10:00AM Room 324 (3rd Floor)",
+        time: "Room 324 (3rd Floor)",
         event:
             "SUDOKU",
     },
 
     {
-        time: "11:00AM Room 304 (3rd Floor)",
+        time: "Room 304 (3rd Floor)",
         event:
             "GAMING (BGMI) ",
     },
     {
-        time: "11:00AM CS LAB-1 (3rd Floor)",
+        time: "CS LAB-1 (3rd Floor)",
         event:
             "CODING",
     },
     {
-        time: "11:00AM (3rd Floor)",
+        time: "(3rd Floor)",
         event:
             "TREASURE HUNT",
     },
     {
-        time: "11:00AM Room 322(3rd Floor) ",
+        time: "Room 322(3rd Floor) ",
         event:
             "LOGO DESIGN",
     },
     {
-        time: "11:00AM (3rd Floor)",
+        time: " (3rd Floor)",
         event:
             "VIDEOGRAPHY",
     },
      {
-        time: "11:00AM Room 325 (3rd floor)",
+        time: "Room 325 (3rd floor)",
         event:
             "Electronic PPT",
     },
     {
-        time: "12:00AM Room 307(3rd floor)",
+        time: "Room 307(3rd floor)",
         event:
             "RUBIK'S CUBE",
     }, {
-        time: "12:00AM Sabhangana(GroundFloor)",
+        time: "Sabhangana(GroundFloor)",
         event:
             "IT QUIZ",
     },
     {
-        time: "12:00AM Room 321(3rd Floor)",
+        time: " Room 321(3rd Floor)",
         event:
             "MATHS PPT" ,
     },
@@ -61,12 +62,12 @@ const timelineArray = [
             "LUNCH",
     },
     {
-        time: "2:00PM ElectronicsLab(4rd floor)",
+        time: "ElectronicsLab(4rd floor)",
         event:
             "Electronic Circuit Analysis",
     },
     {
-        time: "2:00PM AUDITORIUM",
+        time: "AUDITORIUM",
         event:
             "Fashion Walk",
     },
