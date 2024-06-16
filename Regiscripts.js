@@ -239,7 +239,7 @@ function whatsappQR(postData) {
     else if (postData.competition === "electronicsPPT")
         document.getElementById("QR").src = "./imgs/electronicsPPTQR.jpg"
     else if (postData.competition === "rubiksCube")
-      document.getElementById("QR").src = "./imgs/rubiksCubeQR.jpg"
+      document.getElementById("QR").src = "./imgs/rubiksQR.jpg"
     else if (postData.competition === "ECA")
        document.getElementById("QR").src = "./imgs/ECAQR.jpg"
     else if (postData.competition === "videography")
