@@ -1,4 +1,4 @@
-window.location.href = "https://forms.gle/cwQcn2FYhTpFb54w9";
+//window.location.href = "https://forms.gle/cwQcn2FYhTpFb54w9";
 document.getElementById('loader').style.display = 'none';
 let jsondata = {}
 let url = ""
